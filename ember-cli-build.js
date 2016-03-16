@@ -7,6 +7,13 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  app.import(app.bowerDirectory + '/uikit/js/uikit.min.js');
+  app.import(app.bowerDirectory + '/uikit/js/components/slideshow.min.js');
+  app.import(app.bowerDirectory + '/uikit/js/components/slideshow-fx.min.js');
+  app.import(app.bowerDirectory + '/uikit/css/uikit.almost-flat.min.css');
+  app.import(app.bowerDirectory + '/uikit/css/components/slideshow.almost-flat.min.css');
+  app.import(app.bowerDirectory + '/uikit/css/components/slidenav.almost-flat.min.css');
+  app.import(app.bowerDirectory + '/uikit/css/components/dotnav.almost-flat.min.css');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
