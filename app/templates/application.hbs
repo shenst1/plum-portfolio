@@ -1,16 +1,38 @@
-<div class="uk-slidenav-position" data-uk-slideshow>
-  <ul class="uk-slideshow">
-    <li class="uk-flex uk-grid">
-      <div class="uk-width-1-2 uk-flex uk-flex-center"><img src="https://render.bitstrips.com/v2/cpanel/8511675-120847775_1-s1-v1.png?palette=1" /></div>
-      <div class="uk-width-1-2 uk-flex uk-flex-column uk-flex-center">
-        <h1>Hi There!</h1>
-        <p>This is a new paragraph</p>
-      </div>
+<div class="uk-slidenav-position" data-uk-slideshow="{height: '100%'}">
+  <ul class="uk-slideshow uk-overlay-active">
+    <li class="uk-flex">
+        <div class="uk-overlay-panel uk-flex uk-padding-remove">
+            <div class="uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
+                <img src="https://render.bitstrips.com/v2/cpanel/8511675-120847775_1-s1-v1.png?palette=1" />
+            </div>
+            <div class="uk-width-1-2 uk-flex uk-flex-column uk-flex-center uk-position-relative">
+                <ul class="uk-position-absolute paper-lines uk-padding-remove uk-list">
+
+                        <li>&nbsp;</li>
+                        <li>Andrew Shenstone</li>
+                        <li>&nbsp;</li>
+                        <li>Front End Engineer</li>
+                        <li>&nbsp;</li>
+                        <li>CV</li>
+                        <li>&nbsp;</li>
+                        <li>&nbsp;</li>
+                        <li>Today's Date</li>
+                        <li>&nbsp;</li>
+                </ul>
+            </div>
+        </div>
+
     </li>
     <li>
-      <div class="uk-width-1-2 uk-flex uk-flex-center">
-        <img src="https://render.bitstrips.com/v2/cpanel/8097116-120847775_1-s1-v1.png?palette=1" />
-      </div>
+        <div class="uk-overlay-panel uk-flex">
+            <div class="uk-width-1-2 uk-flex uk-flex-center uk-flex-middle">
+                <img src="https://render.bitstrips.com/v2/cpanel/8097116-120847775_1-s1-v1.png?palette=1" />
+            </div>
+            <div class="uk-width-1-2 uk-flex uk-flex-column uk-flex-center">
+                <h1>Hi There!</h1>
+                <p>This is a new paragraph</p>
+            </div>
+        </div>
     </li>
   </ul>
   <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
@@ -25,12 +47,41 @@
 <style>
   .uk-slidenav-position {
     background-color: beige;
-    padding: 60px 0;
+    height: 100vh;
   }
-  .uk-slideshow li img {
+
+
+  .uk-slideshow img {
     border-radius: 50px;
+  }
+  .paper-lines {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+  }
+  .paper-lines li {
+      line-height: 10vh;
+      font-size: 8vh;
+      border-bottom: 1px solid lightblue;
+      color: rgba(0,0,0, .45)
+
   }
   h1, h2, h3, h4, h5, p {
     color: #301030;
+  }
+  h1, li {
+      font-family: '1942_report1942_report';
+  }
+  @font-face {
+      font-family: '1942_report1942_report';
+      src: url('fonts/1942-webfont.eot');
+      src: url('fonts/1942-webfont.eot?#iefix') format('embedded-opentype'),
+      url('fonts/1942-webfont.woff') format('woff'),
+      url('fonts/1942-webfont.ttf') format('truetype'),
+      url('fonts/1942-webfont.svg#1942_report1942_report') format('svg');
+      font-fonts/weight: normal;
+      font-style: normal;
+
   }
 </style>

@@ -14,6 +14,10 @@ module.exports = function(defaults) {
   app.import(app.bowerDirectory + '/uikit/css/components/slideshow.min.css');
   app.import(app.bowerDirectory + '/uikit/css/components/slidenav.min.css');
   app.import(app.bowerDirectory + '/uikit/css/components/dotnav.min.css');
+  app.import(app.bowerDirectory + '/uikit/fonts/FontAwesome.otf');
+  app.import(app.bowerDirectory + '/uikit/fonts/fontawesome-webfont.ttf');
+  app.import(app.bowerDirectory + '/uikit/fonts/fontawesome-webfont.woff');
+  app.import(app.bowerDirectory + '/uikit/fonts/fontawesome-webfont.woff2');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
